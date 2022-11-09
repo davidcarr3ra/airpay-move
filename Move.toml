@@ -1,0 +1,11 @@
+[package]
+name = "Airpay"
+version = "1.0.0"
+
+[addresses]
+hypermatter = "0x7899cc9c5b8ef15605ef46adc52d004db3caa5e4b2bb64da46cb7b9363f8e934"
+
+[dependencies.AptosFramework]
+git = 'https://github.com/aptos-labs/aptos-core'
+subdir = 'aptos-move/framework/aptos-framework'
+rev = '5ca8a7a5ce0f65ff44cd6ad1485543467d5782f6'

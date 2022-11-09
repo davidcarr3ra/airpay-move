@@ -7,7 +7,8 @@ module hypermatter::vault {
 
     const MODULE_ADMIN: address = @0x7899cc9c5b8ef15605ef46adc52d004db3caa5e4b2bb64da46cb7b9363f8e934; // hard-coding for now as above does not work
 
-    struct HypermatterVault<phantom X> has key {
-        coin_reserve: Coin<X>
+    struct HypermatterVault<phantom X> has key { // will only take one type of coin (APT) for now
+        coin_reserve: Coin<X>,
+        fee: u64
     }
 }
